@@ -1,0 +1,21 @@
+title SPA
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+
+Browser<--Server: HTML-code
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+
+Browser<--Server: main.css (CSS-code)
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+
+Browser<--Server: spa.js (JavaScript-code)
+note over Browser: Browser starts executing js-code that requests\n JSON data from server end note and prevents\n to reload the entire process in case a new note\n is submited
+
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Browser<--Server: [{ content: "HTML is easy", date: "2019-05-23" }, ...]
+
+note over Browser: Browser executes the event handler that\n renders notes to display end note
+
+This diagram can visualized in https://sequencediagram.org/

@@ -1,0 +1,10 @@
+title SPA - New Note
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note over Browser: This method contains a payload\n (as explained in the exercise 0.4).
+
+Browser<--Server: {"message":"note created"}
+note over Browser: As explained in the exercise 0.5,\n the spa.js contains a method which\n prevents the reloading of the entire app\n in case of a note creation, so the page\n just update the notes list.
+
+This diagram can visualized in https://sequencediagram.org/
